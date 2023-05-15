@@ -1,0 +1,165 @@
+k/* menu1 sub1 : med-proc 시작 */
+.med-proc { width: 100% }
+.med-proc .inner { width: 1400px; margin: auto; box-sizing: border-box; }
+.med-proc h3 {
+    font-size: 22px; font-weight: 500; 
+    margin-bottom: 20px;
+}
+.med-proc h3 + ul {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.med-proc h3 + ul:last-child {
+    margin-bottom: 200px;
+}
+.med-proc h3 + ul li {
+    width: 220px; height: 220px; 
+    border: 15px solid #E0DBF0; border-radius: 50%;
+    padding: 30px 0;
+    text-align: center;
+    box-sizing: border-box;    
+    position: relative;
+}
+.med-proc h3 + ul li::after {
+    content: "\e93e";
+    display: block;
+    font-family: xeicon;
+    font-size: 30px;
+    position: absolute; top: 50%; right: -70px; transform: translateY(-50%); 
+}
+.med-proc h3 + ul li:last-child { border-color: #7A6890; }
+.med-proc h3 + ul li:last-child:after { display: none; }
+.med-proc h3 + ul li strong {
+    font-size: 35px;
+    border-bottom: 2px solid #E0DBF0; 
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+.med-proc h3 + ul li p { font-size: 18px; line-height: 1.3; color: gray; }
+
+
+
+
+
+
+
+
+
+
+
+/* menu3 sub1 : praise-board 시작 */
+.praise-board { width: 100% }
+.praise-board .inner { position: relative; width: 1400px; margin: auto; box-sizing: border-box; }
+
+/* 작성자, 작성일자 공통 */
+.praise-board div .writer {font-size: 16px; letter-spacing: 2px;}
+.praise-board div .writer i {font-size: 22px; vertical-align: middle; margin-right: 3px; }
+.praise-board div .date {font-size: 16px;}
+
+/* 카드프리뷰*/
+.praise-board .card-preview {
+    position: relative;
+    width: 1400px; height: 710px;
+    box-sizing: border-box;
+    background: no-repeat; background-position: 0 0; background-size: cover; background-image: url(../page/menu3/sub1/images/card.png);
+} 
+.praise-board .card-preview .inner {
+    position: absolute; 
+    top: 60px; left: 80px;
+    width: 700px;
+    text-align: left;
+}
+.praise-board .card-preview strong {font-size: 22px; font-weight: 500;}
+.praise-board .card-preview p {font-size: 18px; margin: 30px 0;}
+.praise-board .card-preview div .date {display: block;}
+.praise-board .card-preview + button {
+    width: 145px; height: 60px;
+    margin: 30px 0 30px 1255px;
+    background: #948DD4; color: #fff;
+    border: none;
+    font-size: 18px; 
+    cursor: pointer;
+}
+
+/* 카드레이아웃 */
+.praise-board .card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; 
+}
+.praise-board .card-wrap .card-layout {
+    display: block;
+    width: 435px; height: 235px; 
+    padding: 35px; 
+    margin-bottom: 45px;
+    border: 1px solid #7A6890; border-radius: 10px; 
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.praise-board .card-wrap .card-layout.on { background-color: #F8F8E6; border: 4px solid #C3BFE2; }
+.praise-board .card-wrap .card-layout strong {
+    display: block;
+    width: 100%;
+    font-size: 20px; font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.praise-board .card-wrap .card-layout p {
+    width: 100%; height: 75px;
+    margin: 15px 0;
+    font-size: 16px; 
+    display : -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp : calc(3);
+    -webkit-box-orient : vertical ;
+}
+.praise-board .card-wrap .card-layout div {display: flex; justify-content: space-between;}
+
+/* 카드 팝업 */
+.praise-board .bg {
+    display: none;
+    position: fixed; left: 0; top: 0; 
+    width: 100%; height: 100%; 
+    background: rgba(0, 0, 0, 0.5);
+}
+.praise-board .bg.show {display: block; opacity: 1;}
+.praise-board .card-popup {
+    display: none;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 800px; 
+    box-sizing: border-box;
+    background: #fff;
+}
+.praise-board .card-popup.show {display: block; opacity: 1;}
+.praise-board .card-popup .close {
+    position: absolute; right: 10px; top: 15px;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 30px;
+    cursor: pointer;   
+}
+.praise-board .card-popup strong {
+    display: block;
+    padding: 15px 30px;
+    background: #d5c4ea;
+    font-size: 20px;
+}
+.praise-board .card-popup p { padding: 30px; font-size: 16px; }
+.praise-board .card-popup div { padding: 10px 40px 30px; text-align: right; }
+.praise-board .card-popup div .date { display: block; }
+
+/* 페이징 */
+.praise-board .paging { display: flex; justify-content: center; margin-bottom: 100px; }
+.praise-board .paging a {
+    display: block;
+    width: 40px; height: 40px;
+    margin: 0 2px;
+    font-size: 16px;
+    text-align: center; line-height: 40px; 
+    cursor: pointer;
+}
+.praise-board .paging a.on { background: #948DD4; color: #fff; }

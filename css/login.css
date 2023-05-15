@@ -1,0 +1,277 @@
+/* 공통 */
+.inner { width: 1400px; margin: auto; box-sizing: border-box; position: relative; }
+
+/* login 시작 */
+.login { width: 100%; }
+.login h2 { font-size: 30px; text-align: center; margin:100px 0 10px; }
+.login p { text-align: center; }
+.login form {width: 1200px; margin: auto;}
+.login form label {position: absolute; left: -9999px; top: 0;}
+
+/* 로그인 상단박스 */
+.login .login-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    border: 1px solid #E0E0E0;
+    padding: 95px 90px;
+    margin: 50px 0;
+    box-sizing: border-box;
+}
+/* 상단 왼쪽박스 */
+.login .login-wrap .login-input {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #E0E0E0;
+    padding-right: 65px;
+}
+.login .login-wrap .login-input ul li input {  
+    width: 415px; height: 55px; 
+    margin: 0 15px 10px 0;  
+    border-color: #edededed;
+    font-size: 20px; 
+    color: #68696D;
+    text-indent: 20px;
+}
+.login .login-wrap .login-input ul li input:focus { box-shadow: 0 0 8px rgba(198, 156, 252, 1); }
+.login .login-wrap .login-input ul li input[type="password"] { margin-bottom: 0; }
+.login .login-wrap .login-input button { 
+    width: 155px; height: 130px; 
+    background: #948DD4; border:none; 
+    font-size: 22px; color:#fff; 
+}
+
+/* 상단 오른쪽박스 */
+.login .login-wrap .login-social { width: 30%; }
+.login .login-wrap .login-social a {
+    width: 295px; height: 55px;
+    margin-bottom: 10px;
+    display: flex; 
+    position: relative;
+}
+.login .login-wrap .login-social a::after {
+    content: "";
+    display: none;
+    width: 305px; height: 65px; border: 3px dashed #bab6d4;
+    position: absolute; top: -7px; left: -7px;
+}
+.login .login-wrap .login-social a.on::after{ display: block; }
+.login .login-wrap .login-social a i {
+    width: 55px; 
+    font-size: 35px; color: #fff;
+    text-align: center; line-height: 55px;
+}
+.login .login-wrap .login-social a span {
+    width: 240px;
+    font-size: 18px; color: #fff;
+    text-align: center; line-height: 55px;
+    border-left: 1px solid #fff;
+}
+.login .login-wrap .login-social .login-fb {background: #3b5999;}
+.login .login-wrap .login-social .login-nv {background: #2e9c09;}
+.login .login-wrap .login-social .login-nv i { font-size: 28px;}
+.login .login-wrap .login-social .login-ka {background: #fbdd01; margin-bottom: 0;}
+.login .login-wrap .login-social .login-ka i { color: #301616;}
+.login .login-wrap .login-social .login-ka span { color: #301616;}
+
+/* 로그인 하단박스 */
+.login .fail-login { 
+    display: flex;
+    width: 1200px;
+    padding: 60px 50px 60px 90px;
+    margin-bottom: 200px;
+    border: 1px solid #E0E0E0; 
+    box-sizing: border-box;
+}
+.login .fail-login div {
+    width: 400px; 
+    padding-left: 50px;
+    border-left: 2px solid #E0E0E0;
+    box-sizing: border-box;
+}
+.login .fail-login div:first-child { padding-left: 0; border: none; }
+.login .fail-login div span {font-size: 18px; font-weight: 500;}
+.login .fail-login div p {font-size: 16px; text-align: left; margin: 10px 0 15px;}
+.login .fail-login div a {
+    display: inline-block;
+    border: 2px solid #948DD4;
+    padding: 10px 30px;
+    background-color: #fff;
+    font-size: 14px; font-weight: 700; color: #948DD4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* join 시작 */
+.join { width: 100%; }
+.join .inner { width: 1400px; margin: auto; box-sizing: border-box; }
+.join .title { margin: 90px 0 10px; text-align: center; font-size: 28px; font-weight: 500; }
+.join .text { text-align: center; font-size: 16px;}
+
+/* step 박스 */
+.join p + ul { display: flex; margin: 45px 0 50px;}
+.join p + ul li { 
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    width: 400px; height: 160px; 
+    border: 1px solid #E0E0E0; 
+    box-sizing: border-box;
+}
+.join p + ul li::after {
+    content: "\e93f"; font-family: xeicon;  
+    width: 35px; height: 35px; 
+    background: #fff; 
+    border: 1px solid #E0E0E0; border-radius: 50%; 
+    font-size: 30px; color: #948DD4; 
+    text-align: center; line-height: 35px;   
+    z-index: 1;
+    position: absolute; top: 50%; transform: translateY(-50%); right: -20px;
+}
+.join p + ul li:last-child:after { display: none; }       
+.join ul li .circle {
+    display: block;
+    width: 100px; height: 100px; 
+    margin-right: 15px;
+    background: #E0E0E0;
+    border-radius: 50%; 
+    text-align: center;
+}
+.join ul li:nth-child(3) .circle {background: #948DD4;} 
+.join ul li .circle i {font-size: 40px; font-weight: 500; line-height: 100px; color: #fff;}
+.join ul li div span { font-size: 16px; font-weight: 500; }
+.join ul li div p { font-size: 16px; }
+
+/* 회원 정보 입력 */
+.join h3 { 
+    position: relative; 
+    padding-bottom: 10px; 
+    border-bottom: 3px solid #C3BFE2;
+    font-size: 25px; 
+}  
+.join h3 > span {
+    position: absolute; 
+    right: 0; top: 50%; transform: translateY(-50%);
+    font-size: 16px; 
+}
+.join table {width: 100%;}
+.join table .name {width: 230px; background: #f9f9f9;} 
+.join table .title {width: auto;}
+.join table .w120 {width: 120px;}
+.join table .w140 {width: 140px;}
+.join table .w230 {width: 230px;}
+.join table .w245 {width: 245px; margin-left: 5px;}
+.join table .w250 {width: 250px;}
+.join table .w540 {width: 540px;}
+
+.join table th, 
+.join table td { 
+    padding: 15px 0;
+    font-size: 18px; 
+    border-bottom: 1px solid #d9d9d9;
+}
+.join table th { 
+    text-align: left; 
+    text-indent: 30px;
+}
+.join table td {
+    position: relative; /* 체크박스 날려서 있어야 함 */
+    padding-left: 20px;
+}
+.join table tr:nth-child(5) td,
+.join table tr:nth-child(6) td { word-spacing: 5px; }
+
+.join table td p { padding: 15px 0; }
+.join table button {
+    width: 135px; height: 50px; 
+    margin-left: 10px;
+    background: #C3BFE2;  border: 1px solid #C3BFE2;
+    vertical-align: top;
+    font-size: 18px; color: #fff;
+}
+.join table button.on {
+    color: #000; 
+    border-color: #726f6f;
+    background: #fff;
+}
+
+/* input */
+.join table input,
+.join table select {
+    height: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-indent: 25px;
+    font-size: 18px;
+}
+.join table input:focus { box-shadow: 0 0 10px rgba(198, 156, 252, 0.7);}
+.join table .birth-day {margin-right: 28px;}
+
+/* radio */
+.join table input[type="radio"] { position: absolute; left: -9999px; top: 0; }
+.join table input[type="radio"] + label {margin-right: 15px;}
+.join table input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 25px; height: 25px; 
+    margin-right: 8px;
+    background: #fff; border: 1px solid #ddd; border-radius: 50%;
+    vertical-align: middle;
+}
+.join table input[type="radio"]:checked + label::before { 
+    /* 체크 후 */
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-image: url(../login/images/radio_cheked.png);
+}
+
+/* checkbox */
+.join table input[type="checkbox"] { position: absolute; left: -9999px; top: 0;}
+.join table input[type="checkbox"] + label::before {
+    /* 체크 전 */
+    content: "";
+    display: inline-block;
+    width: 35px; height: 35px;
+    background: #fff; 
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.join table input[type="checkbox"]:checked + label::before {
+    /* 체크 후 */
+    content: "\e929";
+    font-family: xeicon;
+    background: #d7d4e9;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+/* 하단 submit 버튼 */
+.join .submit-wrap { text-align: center; margin: 40px 0 100px; }
+.join .submit-wrap button {
+    width: 200px; height: 60px; 
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 20px;
+}
+.join .submit-wrap button:last-child {
+    background: #948DD4;
+    border-color: #948DD4;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.join h3 span b,
+.join label + b {color: tomato; margin-left: 5px;}
+

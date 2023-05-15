@@ -1,0 +1,58 @@
+.title-wrap {
+    position: relative;
+    width: 100%; height: 140px; 
+    margin-bottom: 60px;
+    border-bottom: 2px solid #c4c4c4;
+}
+.title-wrap h2 {
+    position: absolute; 
+    top: 75px; left: 0;
+    font-size: 30px; 
+}
+.icon-box {
+    display: flex; 
+    position: absolute; 
+    top: 75px; right: 0; 
+}
+.title-wrap .icon-box li p {
+    width: 40px; height: 40px; 
+    margin-left: 8px; 
+    border: 1px solid #ccc; border-radius: 50%; 
+    text-align: center;
+    cursor: pointer; 
+}
+.title-wrap .icon-box li p.on {background: #948DD4; color: #fff; transition: 0.7s;}
+.title-wrap .icon-box li p i {font-size: 25px; font-weight: 100; line-height: 40px;}
+.title-wrap .bg {
+    display: none;
+    position: fixed; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%; 
+    background:#fff; 
+    opacity: 0; 
+}
+.title-wrap .bg.on { display: block; } 
+.title-wrap .icon-box li .sns-box {
+    display: flex; 
+    flex-direction: column; justify-content: space-around; align-items: center;
+    position: absolute; top: 50px; right: 80px; 
+    width: 80px; height: 240px; 
+    border: 1px solid #ccc; 
+    background: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+.title-wrap .icon-box li .sns-box.on {opacity: 1;}
+.title-wrap .icon-box li .sns-box span {
+    display: block;
+    width: 35px; height: 35px; 
+    border-radius: 50%; 
+    text-align: center;
+    cursor: pointer;
+}
+.title-wrap .icon-box li .sns-box .sns1 {background: #3e7fc6;}
+.title-wrap .icon-box li .sns-box .sns2 {background: #00aff7;}
+.title-wrap .icon-box li .sns-box .sns3 {background: #2cbb00;}
+.title-wrap .icon-box li .sns-box .sns4 {background: #ffdf00;}
+.title-wrap .icon-box li .sns-box .sns5 {background: #6117a7;}
+.title-wrap .icon-box li .sns-box span i{font-size: 20px; line-height: 35px; color: #fff;}
